@@ -1,8 +1,7 @@
 ({
 	onSearch : function(component, event, helper) {
 		var action = component.get("c.getBoats");
-        var btid = component.get("v.boatTypeId");
-        
+        var btid = component.get("v.boatTypeId");        
         action.setParams({boatTypeId : btid});
         
         action.setCallback(this, function(response){

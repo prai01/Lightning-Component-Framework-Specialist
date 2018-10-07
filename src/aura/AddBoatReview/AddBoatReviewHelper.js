@@ -1,8 +1,8 @@
 ({
 	onInit : function(component, event) {
-        console.log('onInit is being executed');
+        console.log('AddBoatReviewHelper.onInit is being executed');
         var boat = component.get("v.boat");
-        console.log("boat="+ JSON.stringify(boat));
+        console.log("AddBoatReviewHelper.onInit-boat="+ JSON.stringify(boat));
         
         component.find("service").getNewRecord(
         	"BoatReview__c",// sObject type(objectAPIName)
@@ -18,9 +18,7 @@
                     return;
                 }
                 else {
-                    console.log("Record template initialized: " + rec.sObjectType);
-                    //component.set("v.simpleNewBoatReview.Boat__c", boat.Id);
-                    //component.set("v.boatReview.Boat__c", boat.Id);
+                    console.log("AddBoatReviewHelper.onInit-Record template initialized: " + rec.sObjectType);
                 }
             })
         );

@@ -14,12 +14,6 @@
     </aura:method>
     
     <lightning:layout horizontalAlign="space" multipleRows="true">
-        <aura:if isTrue="{!v.boats.length == 0}">
-            <div class="slds-align_absolute-center">
-                "No boats found"
-            </div>
-        </aura:if>
-        
         <aura:if isTrue="{!v.boats.length > 0}">
             <aura:iteration items="{!v.boats}" var="boat">
                 <lightning:layoutItem flexibility="auto" 
@@ -32,6 +26,11 @@
                                 selected="{!v.selectedBoatId == boat.Id  ? true : false}"/>
                 </lightning:layoutItem>
             </aura:iteration>
+        </aura:if>
+        <aura:if isTrue="{!v.boats.length == 0}">
+            <div class="slds-align_absolute-center">
+                "No boats found"
+            </div>
         </aura:if>
     </lightning:layout>
     

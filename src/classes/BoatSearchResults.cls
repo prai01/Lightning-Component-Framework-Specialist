@@ -9,12 +9,13 @@ public class BoatSearchResults {
     			if ((!Schema.SObjectType.Boat__c.fields.Name.isAccessible())){
     				throw new System.NoAccessException();
     				}
-	        if (String.isEmpty(boatTypeId)){
-	        		boats = [select Id,Name,Picture__c,contact__r.Name,Geolocation__Latitude__s,Geolocation__Longitude__s  from Boat__c];
-	        }
-	        else{
-	            boats = [select Id,Name,Picture__c,contact__r.Name,Geolocation__Latitude__s,Geolocation__Longitude__s  from Boat__c where BoatType__c =: boatTypeId];
-	        }
+                
+                if (String.isEmpty(boatTypeId)){
+                        boats = [select Id,Name,Picture__c,contact__r.Name,Geolocation__Latitude__s,Geolocation__Longitude__s  from Boat__c];
+                }
+                else{
+                    boats = [select Id,Name,Picture__c,contact__r.Name,Geolocation__Latitude__s,Geolocation__Longitude__s  from Boat__c where BoatType__c =: boatTypeId];
+                }
     		}
     		catch(Exception e){
     			return boats;

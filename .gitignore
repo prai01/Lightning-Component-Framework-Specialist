@@ -1,0 +1,8 @@
+#exclude everything except src and migration_pkg directories
+/*
+!/src
+!/deploy
+!/delete
+!/.codeclimate.yml
+src/package.xml
+

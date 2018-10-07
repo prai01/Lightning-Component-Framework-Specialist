@@ -9,15 +9,15 @@
                       class="{!v.selected ? 'tile selected' : 'tile'}"
                       onclick="{!c.onBoatClick}" 
                       aura:id="selectButton">
-                      
-   		<div id="boatImage" style="{!'background-image:url(\''+v.boat.Picture__c+'\');'}" class="innertile">
-      		<div class="lower-third">
-          		<h1 class="slds-truncate">
-              	<ui:outputText aura:id="contact" value="{!v.boat.Contact__r.Name}" />
-          		</h1>
-      		</div>
-    		</div>
-    		
+        
+        <div id="boatImage" style="{!'background-image:url(\''+v.boat.Picture__c+'\');'}" class="innertile">
+            <div class="lower-third">
+                <h1 class="slds-truncate">
+                    <ui:outputText aura:id="contact" value="{!v.boat.Contact__r.Name}" />
+                </h1>
+            </div>
+        </div>
+        
     </lightning:button>
-   
+    
 </aura:component>
