@@ -1,6 +1,6 @@
 public with sharing class BoatSearchFormController {
 
-@AuraEnabled
+	@AuraEnabled
     public static List<BoatType__c> getBoatTypes() {	
 		/*
 		Best Practice - Chekc if selected fields by getBoatTypes are accessiable to the current user.

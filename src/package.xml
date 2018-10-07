@@ -13,8 +13,8 @@
         <name>CustomObject</name>
     </types>
     <types>
-        <members>*</members>
-        <name>CustomTab</name>
+        <members>Friends_with_Boats</members>
+        <name>FlexiPage</name>
     </types>
     <version>38.0</version>
 </Package>

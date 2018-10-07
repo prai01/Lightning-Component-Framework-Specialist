@@ -18,10 +18,10 @@
             		var errors= response.getError();
                  if(errors){
                      if(errors[0] && errors[0].message){
-                        console.log("Encountered Error:" + errors[0].message);
+                        console.log("BoatSearchResultsHelper.onSearch-Encountered Error:" + errors[0].message);
                        }
                     	} else {
-                        console.log("Encountered Error: Unknown");
+                        console.log("BoatSearchResultsHelper.onSearch-Encountered Error: Unknown");
                     }
                 }
         		});

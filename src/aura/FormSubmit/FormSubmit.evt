@@ -1,3 +1,4 @@
-<aura:event type="COMPONENT" description="Custom Component event that can contain attributes that can be set before the event is fired and read when the event is handled.">
+<aura:event type="COMPONENT" description="Custom Component event that can contain attributes that can be set before the event is fired 
+                                          and read when the event is handled. BoatSearchForm raises and BoatSearch handles it.">
     <aura:attribute name="formData" type="Object[]"/>    
 </aura:event>

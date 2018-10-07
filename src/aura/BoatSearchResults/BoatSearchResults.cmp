@@ -1,5 +1,5 @@
 <aura:component controller="BoatSearchResults">
-
+    
     <aura:attribute name="boatTypeId" type="Id" default=""/>
     <aura:attribute name="boats" type="Boat__c[]"/>
     <aura:attribute name="selectedBoatId" type="Id"/>
@@ -14,15 +14,15 @@
     </aura:method>
     
     <lightning:layout horizontalAlign="space" multipleRows="true">
-    		<aura:if isTrue="{!v.boats.length == 0}">
-        		<div class="slds-align_absolute-center">
-            		"No boats found"
+        <aura:if isTrue="{!v.boats.length == 0}">
+            <div class="slds-align_absolute-center">
+                "No boats found"
             </div>
         </aura:if>
         
         <aura:if isTrue="{!v.boats.length > 0}">
-        	<aura:iteration items="{!v.boats}" var="boat">
-            	<lightning:layoutItem flexibility="auto" 
+            <aura:iteration items="{!v.boats}" var="boat">
+                <lightning:layoutItem flexibility="auto" 
                                       size="12"
                                       mediumDeviceSize="6"
                                       largeDeviceSize="3" 
@@ -31,7 +31,7 @@
                                 aura:id="boatcmp"
                                 selected="{!v.selectedBoatId == boat.Id  ? true : false}"/>
                 </lightning:layoutItem>
-           	</aura:iteration>
+            </aura:iteration>
         </aura:if>
     </lightning:layout>
     
