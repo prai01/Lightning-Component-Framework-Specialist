@@ -1,0 +1,14 @@
+<aura:component implements="force:appHostable" access="global">
+    <div class="white">
+    	Hello HTML I am the direct child of this component!
+    </div>
+    <div class="white">
+    	Hello HTML!
+    </div>
+	<h2>Check out the style in the list.</h2>
+    <ul class="white">
+        <li class="red"> I'm red.</li>
+        <li class="green"> I'm green.</li>
+        <li class="blue"> I'm blue.</li>
+    </ul>
+</aura:component>

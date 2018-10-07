@@ -1,0 +1,7 @@
+<aura:component controller="AttributeTypes">
+    <aura:attribute name="favoriteColors" type="String[]" default="cyan, yellow, magenta"/>
+    <aura:iteration items="{!v.favoriteColors}" var="s">
+        {!s}
+    </aura:iteration>
+    <lightning:button onclick="{!c.getString}" label="Update"/>
+</aura:component>

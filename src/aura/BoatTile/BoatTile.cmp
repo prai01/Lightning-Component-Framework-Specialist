@@ -1,0 +1,23 @@
+<aura:component>
+    <aura:attribute name="boat" type="Boat__c"/>
+    <aura:attribute name="selected" type="Boolean" default="false"/>
+    <aura:registerEvent name="BoatSelect" type="c:BoatSelect"/>
+    <aura:registerEvent name="BoatSelected" type="c:BoatSelected"/>
+    <aura:registerEvent name="PlotMapMarker" type="c:PlotMapMarker"/>    
+    
+    <lightning:button name="{!v.boat.Id}" 
+                      class="{!v.selected ? 'tile selected' : 'tile'}"
+                      onclick="{!c.onBoatClick}" 
+                      aura:id="selectButton">
+                      
+   		<div id="boatImage" style="{!'background-image:url(\''+v.boat.Picture__c+'\');'}" class="innertile">
+      		<div class="lower-third">
+          		<h1 class="slds-truncate">
+              	<ui:outputText aura:id="contact" value="{!v.boat.Contact__r.Name}" />
+          		</h1>
+      		</div>
+    		</div>
+    		
+    </lightning:button>
+   
+</aura:component>

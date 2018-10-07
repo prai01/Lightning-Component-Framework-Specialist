@@ -1,0 +1,3 @@
+<aura:event type="COMPONENT" description="BoatReviewAdded event fires upon Boat Review is created.">
+    <aura:attribute name="BoatReviewAdded" type="Boat__c"/>
+</aura:event>
