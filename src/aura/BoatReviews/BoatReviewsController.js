@@ -1,7 +1,6 @@
 ({
 	doInit : function(component, event, helper) {
-        console.log('component='+component);
-		helper.onInit(component, event);        
+        helper.onInit(component, event);        
 	},
     onUserInfoClick : function(component, event, helper){
         var userId = event.currentTarget.getAttribute("data-userid");

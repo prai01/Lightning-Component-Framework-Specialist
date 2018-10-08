@@ -1,6 +1,5 @@
 ({
 	onInit : function(component, event) {
-        console.log('AddBoatReviewHelper.onInit is being executed');
         var boat = component.get("v.boat");
         console.log("AddBoatReviewHelper.onInit-boat="+ JSON.stringify(boat));
         

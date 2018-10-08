@@ -55,14 +55,10 @@
                                 <p class="slds-text-body_small"><lightning:formattedRichText value="{!boatReview.Comment__c}"/></p>
                             </div>
                             
-                            <div class="slds-post-body_small">
-                                <p><c:FiveStarRating value="{!v.boatReview.Rating__c}" readonly="true"/></p>	
-                            </div>
-                            
                             <footer class="slds-post__footer">
                                 <ul class="slds-post__footer-actions-list slds-list_horizontal">
                                     <li class="slds-col slds-item slds-m-right_medium">
-                                        <!--c:FiveStarRating aura:id="FiveStarRating" value="{!boatReview.Rating__c}" readonly="true"/-->
+                                        <c:FiveStarRating aura:id="FiveStarRating" value="{!boatReview.Rating__c}" readonly="true"/>
                                     </li>
                                 </ul>
                             </footer>

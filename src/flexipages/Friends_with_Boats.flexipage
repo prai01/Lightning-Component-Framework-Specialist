@@ -26,7 +26,7 @@
         <componentInstances>
             <componentInstanceProperties>
                 <name>height</name>
-                <value>200px</value>
+                <value>400px</value>
             </componentInstanceProperties>
             <componentInstanceProperties>
                 <name>width</name>

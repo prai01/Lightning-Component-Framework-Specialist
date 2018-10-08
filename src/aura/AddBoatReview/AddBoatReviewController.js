@@ -4,6 +4,7 @@
     },
 	onSave : function(component, event, helper) {        
         component.set("v.simpleNewBoatReview.Boat__c", component.get("v.boat.Id"));
+       
         console.log("AddBoatReviewController.onSave-v.boatReview="+JSON.stringify(component.get("v.boatReview")));
         console.log("AddBoatReviewController.onSave-v.simpleNewBoatReview="+JSON.stringify(component.get("v.simpleNewBoatReview")));
         

@@ -30,7 +30,7 @@
             
             <lightning:layoutItem size="12" padding="around-small">
                 <label class="slds-form-element__label">Rating:</label>
-                <c:FiveStarRating value="{!v.boatReview.Rating__c}" readonly="false"/>	
+                <c:FiveStarRating aura:id="FiveStarRating" value="{!v.simpleNewBoatReview.Rating__c}" readonly="false"/>	
             </lightning:layoutItem>
             
             <lightning:layoutItem size="12" class="slds-align--absolute-center">

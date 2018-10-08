@@ -9,7 +9,8 @@ public with sharing class BoatReviews {
                 		CreatedBy.CompanyName 
                 FROM 
                 	BoatReview__c 
-                WHERE Boat__c = :boatId];
+                WHERE Boat__c = :boatId
+                ORDER BY LastModifiedDate DESC];
 		System.debug('brList='+brList);
         return brList;
     }

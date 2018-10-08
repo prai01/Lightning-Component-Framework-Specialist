@@ -3,7 +3,7 @@
                   scripts="{!$Resource.fivestar + '/rating.js'}"
                   afterScriptsLoaded="{!c.afterScriptsLoaded}"/>
     
-    <aura:attribute name="value" type="Integer" default="0"/>
+    <aura:attribute name="value" type="Integer" default="4"/>
     <aura:attribute name="readOnly" type="boolean"/>
     
     <aura:handler name="change" value="{!v.value}" action="{!c.onValueChange}"/>
